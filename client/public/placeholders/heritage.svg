@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1929"/>
+      <stop offset="60%" stop-color="#1A2E44"/>
+      <stop offset="100%" stop-color="#2D4A6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <!-- Stylized factory rooflines -->
+  <g opacity="0.35" fill="#A8B0BA">
+    <polygon points="0,700 200,500 400,700"/>
+    <polygon points="400,700 600,500 800,700"/>
+    <polygon points="800,700 1000,500 1200,700"/>
+    <polygon points="1200,700 1400,500 1600,700"/>
+    <rect x="0" y="700" width="1600" height="200"/>
+  </g>
+  <text x="800" y="380" text-anchor="middle" font-family="'Archivo Black', sans-serif" font-size="42" fill="#F26419" letter-spacing="2">HERITAGE PLACEHOLDER</text>
+  <text x="800" y="430" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#A8B0BA" opacity="0.8">Replace with Corona, CA factory exterior photo</text>
+</svg>

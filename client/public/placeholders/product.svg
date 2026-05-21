@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1A2E44"/>
+      <stop offset="100%" stop-color="#0E1929"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#g)"/>
+  <!-- Stylized foam roll -->
+  <g transform="translate(600 620)">
+    <ellipse cx="0" cy="0" rx="380" ry="100" fill="#F26419"/>
+    <ellipse cx="0" cy="0" rx="380" ry="100" fill="none" stroke="#0E1929" stroke-width="4"/>
+    <ellipse cx="0" cy="-15" rx="380" ry="100" fill="none" stroke="#0E1929" stroke-width="2" opacity="0.4"/>
+    <ellipse cx="0" cy="-30" rx="380" ry="100" fill="none" stroke="#0E1929" stroke-width="2" opacity="0.3"/>
+    <ellipse cx="0" cy="-45" rx="380" ry="100" fill="none" stroke="#0E1929" stroke-width="2" opacity="0.2"/>
+  </g>
+  <text x="600" y="280" text-anchor="middle" font-family="'Archivo Black', sans-serif" font-size="48" fill="#F5F0E8" letter-spacing="3">PRODUCT SHOT</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#A8B0BA" opacity="0.8">Replace with real DraftShield roll photography</text>
+</svg>

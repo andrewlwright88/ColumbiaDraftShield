@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0E8"/>
+      <stop offset="100%" stop-color="#D9CFB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g opacity="0.4">
+    <rect x="100" y="100" width="1400" height="700" fill="none" stroke="#0E1929" stroke-width="2" stroke-dasharray="8 6"/>
+  </g>
+  <text x="800" y="430" text-anchor="middle" font-family="'Archivo Black', sans-serif" font-size="42" fill="#F26419" letter-spacing="2">PROBLEM SECTION PLACEHOLDER</text>
+  <text x="800" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" fill="#0E1929" opacity="0.7">Replace with failed foam-tape closeup</text>
+</svg>
