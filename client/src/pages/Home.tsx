@@ -22,6 +22,8 @@ import {
 } from "lucide-react";
 import { IMG } from "@/lib/images";
 import { SKUS, SCIENCE_FACTS, TESTIMONIALS, HOME_DEPOT_URL } from "@/lib/data";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 // ─── Scroll reveal hook ───────────────────────────────────────────────────────
 function useReveal() {
@@ -606,6 +608,7 @@ function FinalCTA() {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <Hero />
       <ProblemSection />
       <SolutionSection />
@@ -617,6 +620,7 @@ export default function Home() {
       <TestimonialsSection />
       <BrandClosing />
       <FinalCTA />
+      <Footer />
     </div>
   );
 }
