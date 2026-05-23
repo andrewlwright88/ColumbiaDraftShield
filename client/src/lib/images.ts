@@ -6,7 +6,7 @@
 // ready.
 
 export const IMG = {
-  hero: "/placeholders/hero.svg",
+  hero: "/photos/hero-factory.jpg",
   problem: "/placeholders/problem.svg",
   product: "/placeholders/product.svg",
   science: "/placeholders/science.svg",

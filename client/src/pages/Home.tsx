@@ -59,7 +59,7 @@ function Hero() {
       <div className="absolute inset-0">
         <img
           src={IMG.hero}
-          alt="Frost-covered window, morning light"
+          alt="Columbia Aluminum Products factory team in Corona, California"
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0" style={{
