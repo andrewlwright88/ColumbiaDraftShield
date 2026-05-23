@@ -14,10 +14,8 @@ export default function Footer() {
       <div className="py-10 bg-[#1A2E44] border-b border-white/10">
         <div className="container max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-5">
-              <div className="bg-[#F5F0E8] px-4 py-3 rounded-sm flex items-center" title="TrimMaster by Columbia Aluminum Products">
-                <img src={IMG.logoTrimMaster} alt="TrimMaster by Columbia Aluminum Products" className="h-7 w-auto" />
-              </div>
+            <div className="flex items-center gap-6">
+              <img src={IMG.logoTrimMaster} alt="TrimMaster by Columbia Aluminum Products" className="h-9 w-auto" />
               <div className="w-px h-10 bg-white/15 hidden md:block" />
               <img src={IMG.logoColumbia} alt="Columbia Aluminum Products" className="h-12 w-auto opacity-90" />
             </div>

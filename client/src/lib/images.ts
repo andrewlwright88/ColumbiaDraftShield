@@ -11,6 +11,6 @@ export const IMG = {
   product: "/placeholders/product.svg",
   science: "/placeholders/science.svg",
   heritage: "/placeholders/heritage.svg",
-  logoTrimMaster: "/brand/trimmaster-logo.avif",
+  logoTrimMaster: "/brand/trimmaster-logo.png",
   logoColumbia: "/brand/columbia-logo.avif",
 };
