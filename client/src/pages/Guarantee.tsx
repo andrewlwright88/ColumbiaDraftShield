@@ -99,9 +99,9 @@ export default function Guarantee() {
               lineHeight: 1.6,
             }}
           >
-            We're the first foam weatherstrip brand to put five years behind our
-            product. Install it per the instructions. If the seal fails before
-            five years, we refund your purchase and ship a replacement.
+            Every roll of DraftShield is backed by a written five-year guarantee.
+            Install it per the instructions. If the seal fails before five years,
+            we refund your purchase and ship a replacement.
           </p>
           <div className="inline-flex items-center gap-3 border px-6 py-3" style={{ borderColor: "rgba(242,100,25,0.4)" }}>
             <Shield size={18} style={{ color: "#F26419" }} />

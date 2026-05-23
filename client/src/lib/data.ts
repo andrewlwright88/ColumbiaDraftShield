@@ -354,24 +354,24 @@ export const TESTIMONIALS = [
 
 export const SCIENCE_FACTS = [
   {
-    stat: "$2.76B",
-    label: "US weatherstripping market",
-    detail: "The category is large, mature, and dominated by two brands competing on price.",
+    stat: "−40°F",
+    label: "Cold-weather bond",
+    detail: "Acrylic adhesive holds in the kind of cold installs that make standard foam tape peel off by January.",
   },
   {
-    stat: "84%",
-    label: "shelf share",
-    detail: "held by two brands competing only on price — neither has solved adhesive failure.",
-  },
-  {
-    stat: "0–10°C",
-    label: "glass transition temp",
-    detail: "of standard foam tape adhesive — it fails right when it matters most.",
+    stat: "5 winters",
+    label: "Engineered service life",
+    detail: "Closed-cell foam, UV-stabilized skin, and a glass-fiber cord built to seal for five winters straight.",
   },
   {
     stat: "30%",
-    label: "heating/cooling savings",
-    detail: "possible by sealing air leaks and adding insulation, per ENERGY STAR estimates.",
+    label: "Heating & cooling savings",
+    detail: "Sealing air leaks can cut up to 30% of your heating and cooling costs, per ENERGY STAR.",
+  },
+  {
+    stat: "15 min",
+    label: "Average install time",
+    detail: "From measuring to pressed in place. Scissors only — no drill, no screws, no special skills.",
   },
 ];
 
@@ -435,7 +435,7 @@ export const FAQ_CATEGORIES = [
     questions: [
       {
         q: "What is DraftShield made of?",
-        a: "DraftShield is a closed-cell polyurethane foam weatherstrip with an internal glass-fiber cord, UV-stabilized polyethylene outer skin, and a premium acrylic adhesive backing rated from –40°F to +220°F. Every component is an upgrade over the open-cell foam and rubber-based adhesive used by the dominant brands.",
+        a: "DraftShield is a closed-cell polyurethane foam weatherstrip with an internal glass-fiber cord, UV-stabilized polyethylene outer skin, and a premium acrylic adhesive backing rated from –40°F to +220°F. Every component is an upgrade over the open-cell foam and rubber-based adhesive used in standard foam tape.",
       },
       {
         q: "How does DraftShield differ from foam tape at Home Depot?",

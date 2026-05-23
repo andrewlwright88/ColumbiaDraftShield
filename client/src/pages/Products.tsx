@@ -52,7 +52,7 @@ export default function Products() {
           <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PRODUCT</p>
           <h1 className="font-['Archivo_Black'] text-5xl lg:text-7xl text-white leading-tight mb-6">
             One foam strip.<br />
-            <span className="text-[#F26419]">Engineered to outlast the category.</span>
+            <span className="text-[#F26419]">Engineered to outlast standard foam tape.</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
             DraftShield is a single product — a premium adhesive-backed foam weatherstrip — available in five sizes.

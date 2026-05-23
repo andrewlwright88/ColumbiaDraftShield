@@ -71,7 +71,7 @@ function Hero() {
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-6">
-            INTRODUCING THE PREMIUM TIER
+            BUILT FOR COLD. ENGINEERED FOR HOLD.
           </p>
 
           {/* Headline */}
@@ -132,22 +132,20 @@ function ProblemSection() {
           {/* Left: copy */}
           <div>
             <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-              THE CATEGORY HAS A PROBLEM
+              WHY MOST FOAM TAPE FAILS
             </p>
             <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-[#0E1929] leading-tight mb-8">
               Foam tape fails.<br />In one winter.<br />Sometimes less.
             </h2>
             <div className="space-y-5 text-[#1A2E44]/80 leading-relaxed">
               <p>
-                The foam weatherstripping most homeowners buy is open-cell foam with a rubber-based adhesive.
-                That adhesive has a glass transition temperature of 0–10°C — the temperature at which it stops bonding effectively.
+                The foam weatherstripping at most hardware stores is open-cell foam with a rubber-based adhesive — a recipe that's barely changed in decades.
               </p>
               <p>
-                So it fails right when it matters. In October, on a cold window frame, the install never sets.
-                By January, the seal is loose. By next fall, the homeowner is back at the store buying more tape.
+                That adhesive stops bonding well below about 50°F. So it fails right when you need it most. In October, on a cold window frame, the install never sets. By January, the seal is loose. By next fall, you're back at the store buying more tape.
               </p>
               <p>
-                Two brands hold 84% of US foam-weatherstrip shelf share. Both compete on price. Neither has solved this. We did.
+                DraftShield uses closed-cell foam and a premium acrylic adhesive built for the cold installs that defeat standard foam tape. One install. Five winters. Guaranteed.
               </p>
             </div>
             <Link
@@ -185,7 +183,7 @@ function SolutionSection() {
     {
       icon: Zap,
       title: "Closed-Cell PU Foam",
-      body: "Polyurethane foam that compresses, recovers, and seals — without absorbing moisture, freezing, or tearing. Not the recycled open-cell foam used by the dominant brands.",
+      body: "Polyurethane foam that compresses, recovers, and seals — without absorbing moisture, freezing, or tearing. A real upgrade over the open-cell foam in most foam tape.",
     },
     {
       icon: Sun,
@@ -245,19 +243,19 @@ function GuaranteeSection() {
     <section ref={ref} className="bg-[#1A2E44] py-24 lg:py-32">
       <div className={`container max-w-4xl mx-auto px-6 lg:px-8 text-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-6">
-          A CATEGORY-FIRST PROMISE
+          THE 5-YEAR GUARANTEE
         </p>
         <h2 className="font-['Archivo_Black'] text-5xl lg:text-6xl text-white leading-tight mb-8">
           Five years.<br />Or your money back.
         </h2>
         <div className="max-w-2xl mx-auto space-y-4 text-white/70 text-lg leading-relaxed mb-8">
           <p>
-            We are the first foam weatherstrip brand to put five years behind our product.
-            Every roll comes with a written guarantee. Install per the instructions.
-            If the seal fails before five years, send us the receipt. We refund the purchase and ship a replacement.
+            Every roll of DraftShield comes with a written five-year guarantee.
+            Install per the instructions. If the seal fails before five years,
+            send us the receipt. We refund the purchase and ship a replacement.
           </p>
           <p className="text-white/50 text-base">
-            Backed by Columbia Aluminum Products. 78 years of manufacturing, on the same lot in Corona, California.
+            Backed by Columbia Aluminum Products — 78 years of precision manufacturing in Corona, California.
           </p>
         </div>
         <div className="inline-flex items-center gap-3 border border-[#F26419]/40 px-8 py-4 mb-8">

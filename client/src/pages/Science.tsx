@@ -24,7 +24,7 @@ const FAILURE_MODES = [
   },
   {
     title: "Adhesive failure in cold",
-    detail: "Rubber-based adhesive — used by the two dominant brands — loses bond strength below 50°F. That's exactly when you need the seal most. DraftShield's premium acrylic adhesive maintains full bond strength down to –40°F.",
+    detail: "Rubber-based adhesive — the kind used in most foam tape — loses bond strength below 50°F. That's exactly when you need the seal most. DraftShield's premium acrylic adhesive maintains full bond strength down to –40°F.",
   },
   {
     title: "UV degradation",
@@ -54,8 +54,7 @@ export default function Science() {
             Why most weatherstripping<br />fails — and how we fixed it.
           </h1>
           <p className="text-xl max-w-2xl text-white/70 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-            The foam weatherstrip category hasn't changed in 40 years. Two brands dominate on price.
-            Neither has solved the core engineering problems. DraftShield is the first product built to actually last.
+            The weatherstripping aisle hasn't changed in decades — same open-cell foam, same rubber-based adhesive, same one-winter failures. DraftShield was built different. Here's exactly how, and why it lasts.
           </p>
         </div>
       </div>
