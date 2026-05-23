@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { HOME_DEPOT_URL } from "@/lib/data";
+import { IMG } from "@/lib/images";
 
 const NAV_LINKS = [
   {
@@ -57,28 +58,32 @@ export default function Navigation() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        backgroundColor: scrolled ? "rgba(14,25,41,0.97)" : "rgba(14,25,41,0.85)",
+        backgroundColor: scrolled ? "rgba(245,240,232,0.98)" : "rgba(245,240,232,0.92)",
         backdropFilter: "blur(12px)",
-        borderBottom: scrolled ? "1px solid rgba(168,176,186,0.12)" : "1px solid transparent",
+        borderBottom: scrolled ? "1px solid rgba(14,25,41,0.10)" : "1px solid transparent",
       }}
     >
       <div className="container max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-18">
-          {/* Wordmark */}
-          <Link href="/" className="flex items-center gap-2 group shrink-0">
+          {/* Wordmark + TrimMaster lockup */}
+          <Link href="/" className="flex items-center gap-3 group shrink-0">
             <span
-              className="text-white text-xl tracking-tight"
-              style={{ fontFamily: "'Archivo Black', sans-serif", letterSpacing: "-0.02em" }}
+              className="text-xl tracking-tight"
+              style={{ fontFamily: "'Archivo Black', sans-serif", letterSpacing: "-0.02em", color: "#0E1929" }}
             >
               DRAFT<span style={{ color: "#F26419" }}>SHIELD</span>
-              <span className="text-xs align-super ml-0.5" style={{ fontFamily: "Inter, sans-serif", fontWeight: 400, color: "#A8B0BA" }}>™</span>
+              <span className="text-xs align-super ml-0.5" style={{ fontFamily: "Inter, sans-serif", fontWeight: 400, color: "#0E1929", opacity: 0.5 }}>™</span>
             </span>
             <span
-              className="hidden sm:block text-xs border-l border-white/20 pl-2 ml-1"
-              style={{ fontFamily: "Inter, sans-serif", color: "#A8B0BA", letterSpacing: "0.04em" }}
-            >
-              by TrimMaster®
-            </span>
+              className="hidden sm:block h-6 w-px"
+              style={{ backgroundColor: "rgba(14,25,41,0.18)" }}
+              aria-hidden="true"
+            />
+            <img
+              src={IMG.logoTrimMaster}
+              alt="TrimMaster by Columbia Aluminum Products"
+              className="hidden sm:block h-7 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -93,23 +98,27 @@ export default function Navigation() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
-                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                    className="flex items-center gap-1 px-3 py-2 text-sm transition-colors"
+                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 500, color: "rgba(14,25,41,0.75)" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "#0E1929")}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(14,25,41,0.75)")}
                   >
                     {link.label}
                     <ChevronDown size={13} className={`transition-transform duration-200 ${dropdown === link.label ? "rotate-180" : ""}`} />
                   </Link>
                   {dropdown === link.label && (
                     <div
-                      className="absolute top-full left-0 mt-1 py-2 shadow-2xl min-w-[200px]"
-                      style={{ backgroundColor: "#1A2E44", border: "1px solid rgba(168,176,186,0.15)" }}
+                      className="absolute top-full left-0 mt-1 py-2 shadow-xl min-w-[200px]"
+                      style={{ backgroundColor: "#FFFFFF", border: "1px solid rgba(14,25,41,0.10)" }}
                     >
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2.5 text-sm text-white/75 hover:text-white hover:bg-white/5 transition-colors"
-                          style={{ fontFamily: "Inter, sans-serif" }}
+                          className="block px-4 py-2.5 text-sm transition-colors"
+                          style={{ fontFamily: "Inter, sans-serif", color: "rgba(14,25,41,0.75)" }}
+                          onMouseEnter={(e) => { e.currentTarget.style.color = "#0E1929"; e.currentTarget.style.backgroundColor = "#F5F0E8"; }}
+                          onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(14,25,41,0.75)"; e.currentTarget.style.backgroundColor = "transparent"; }}
                         >
                           {child.label}
                         </Link>
@@ -121,8 +130,10 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-3 py-2 text-sm text-white/80 hover:text-white transition-colors"
-                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                  className="px-3 py-2 text-sm transition-colors"
+                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500, color: "rgba(14,25,41,0.75)" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#0E1929")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(14,25,41,0.75)")}
                 >
                   {link.label}
                 </Link>
@@ -141,7 +152,8 @@ export default function Navigation() {
               Find at Home Depot
             </a>
             <button
-              className="lg:hidden text-white p-1.5"
+              className="lg:hidden p-1.5"
+              style={{ color: "#0E1929" }}
               onClick={() => setOpen(!open)}
               aria-label="Toggle menu"
             >
@@ -155,15 +167,15 @@ export default function Navigation() {
       {open && (
         <div
           className="lg:hidden border-t"
-          style={{ backgroundColor: "#0E1929", borderColor: "rgba(168,176,186,0.15)" }}
+          style={{ backgroundColor: "#F5F0E8", borderColor: "rgba(14,25,41,0.10)" }}
         >
           <div className="container max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
               <div key={link.label}>
                 <Link
                   href={link.href}
-                  className="block py-3 text-base text-white/85 hover:text-white border-b border-white/5"
-                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                  className="block py-3 text-base border-b"
+                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500, color: "#0E1929", borderColor: "rgba(14,25,41,0.08)" }}
                 >
                   {link.label}
                 </Link>
@@ -171,8 +183,8 @@ export default function Navigation() {
                   <Link
                     key={child.href}
                     href={child.href}
-                    className="block py-2 pl-4 text-sm text-white/60 hover:text-white/90"
-                    style={{ fontFamily: "Inter, sans-serif" }}
+                    className="block py-2 pl-4 text-sm"
+                    style={{ fontFamily: "Inter, sans-serif", color: "rgba(14,25,41,0.65)" }}
                   >
                     {child.label}
                   </Link>
