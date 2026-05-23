@@ -80,15 +80,14 @@ export default function ProductDetail() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Product visual */}
             <div className="relative">
-              <div className="aspect-square bg-[#1A2E44] flex items-center justify-center overflow-hidden">
+              <div className="aspect-[3/4] bg-[#0E1929] flex items-center justify-center overflow-hidden p-6">
                 <img
-                  src={IMG.product}
-                  alt={sku.name}
-                  className="w-full h-full object-cover opacity-80"
+                  src={sku.image ?? IMG.product}
+                  alt={`DraftShield ${sku.name} carton`}
+                  className="max-h-full w-auto object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1929]/60 to-transparent" />
                 {sku.badge && (
-                  <div className="absolute top-6 left-6 bg-[#F26419] text-white text-xs font-bold px-3 py-1.5 tracking-widest uppercase">
+                  <div className="absolute top-6 left-6 bg-[#F26419] text-white text-xs font-bold px-3 py-1.5 tracking-widest uppercase z-10">
                     {sku.badge}
                   </div>
                 )}

@@ -23,6 +23,8 @@ export interface Sku {
   tagline: string;
   body: string;
   badge?: string;
+  /** Optional packaging mockup URL. Falls back to IMG.product when absent. */
+  image?: string;
   whereFits: { location: string; detail: string }[];
   relatedSlugs: string[];
   hdLink: string;
@@ -42,6 +44,7 @@ export const SKUS: Sku[] = [
     tagline: "The size that fits most.",
     body: "If you're new to DraftShield, this is the one to start with — engineered to compress and seal across the widest range of household gaps. Windows, door jambs, AC units, attic hatches.",
     badge: "Start Here",
+    image: "/photos/package-universal.png",
     whereFits: [
       {
         location: "Windows",
