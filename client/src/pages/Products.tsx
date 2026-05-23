@@ -9,7 +9,7 @@ import { Link } from "wouter";
 import { ArrowRight, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { SKUS, SKU_MAP, SHARED_SPECS, CONSTRUCTION_LAYERS, HOME_DEPOT_URL } from "@/lib/data";
+import { SKUS, SHARED_SPECS, CONSTRUCTION_LAYERS, HOME_DEPOT_URL } from "@/lib/data";
 import { IMG } from "@/lib/images";
 
 function useReveal() {
@@ -42,7 +42,7 @@ export default function Products() {
       {/* ── Hero ── */}
       <section className="relative bg-[#0E1929] pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src={SKU_MAP.universal.image ?? IMG.product} alt="DraftShield product lineup" className="w-full h-full object-cover" />
+          <img src={IMG.packageUniversal} alt="DraftShield Universal Roll packaging" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0E1929]/60" />
         </div>
         <div

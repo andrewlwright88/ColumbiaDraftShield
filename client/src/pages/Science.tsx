@@ -84,8 +84,12 @@ export default function Science() {
       <Section className="py-24 lg:py-32 bg-[#0E1929]">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="reveal">
-              <img src={IMG.product} alt="DraftShield foam weatherstrip" className="w-full" />
+            <div className="reveal flex items-center justify-center">
+              <img
+                src={IMG.packageUniversal}
+                alt="DraftShield Universal Roll packaging"
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
             <div>
               <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PROBLEM</p>

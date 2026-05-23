@@ -9,6 +9,7 @@ export const IMG = {
   hero: "/photos/hero-factory.jpg",
   problem: "/placeholders/problem.svg",
   product: "/placeholders/product.svg",
+  packageUniversal: "/photos/package-universal.png",
   science: "/placeholders/science.svg",
   heritage: "/placeholders/heritage.svg",
   logoTrimMaster: "/brand/trimmaster-logo.png",
