@@ -81,7 +81,7 @@ export default function Science() {
       </Section>
 
       {/* Why foam fails */}
-      <Section className="py-24 lg:py-32 bg-[#0E1929]">
+      <Section className="py-24 lg:py-32 bg-[#F5F0E8]">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="reveal flex items-center justify-center">
@@ -93,16 +93,16 @@ export default function Science() {
             </div>
             <div>
               <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PROBLEM</p>
-              <h2 className="font-['Archivo_Black'] text-4xl text-white mb-6 leading-tight">
+              <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-6 leading-tight">
                 Why standard foam tape fails in 2–3 years.
               </h2>
               <div className="space-y-5 stagger">
                 {FAILURE_MODES.map((item) => (
                   <div key={item.title} className="reveal border-l-2 border-[#F26419] pl-5">
-                    <h4 className="text-sm font-semibold text-white mb-1" style={{ fontFamily: "Inter, sans-serif" }}>
+                    <h4 className="text-sm font-semibold text-[#0E1929] mb-1" style={{ fontFamily: "Inter, sans-serif" }}>
                       {item.title}
                     </h4>
-                    <p className="text-sm text-white/50 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
+                    <p className="text-sm text-[#1A2E44]/75 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
                       {item.detail}
                     </p>
                   </div>
