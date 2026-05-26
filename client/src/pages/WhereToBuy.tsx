@@ -71,9 +71,9 @@ export default function WhereToBuy() {
               >
                 <div
                   className="w-12 h-12 rounded-sm flex items-center justify-center mb-5"
-                  style={{ backgroundColor: "rgba(242,100,25,0.15)", border: "1px solid rgba(242,100,25,0.25)" }}
+                  style={{ backgroundColor: "rgba(240,181,0,0.15)", border: "1px solid rgba(240,181,0,0.25)" }}
                 >
-                  <Icon size={22} style={{ color: "#F26419" }} />
+                  <Icon size={22} style={{ color: "#F0B500" }} />
                 </div>
                 <h3 className="text-lg text-white mb-2" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
                   {title}

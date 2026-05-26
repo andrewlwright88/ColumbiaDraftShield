@@ -108,13 +108,15 @@ vercel.json                   ← SPA rewrites + cache headers
 
 ## Brand design system
 
-### Color palette (OKLCH in CSS, hex for reference)
+### Color palette
 
 | Token | Hex | Usage |
 |---|---|---|
 | `--ds-midnight` | `#0E1929` | Primary background |
 | `--ds-navy` | `#1A2E44` | Secondary background, cards |
-| `--ds-orange` | `#F26419` | Primary CTA, accent, highlights |
+| `--ds-performance` | `#F0B500` | Primary CTA, accent, highlights — warm construction amber (formerly Performance Orange `#F26419`) |
+| `--ds-performance-hover` | `#C99700` | Hover state for CTA buttons |
+| `--ds-brand-blue` | `#0073CF` | **PMS 3005** — TrimMaster brand blue. Use selectively as a brand-identity accent; pair with the midnight/navy darks. Do not use as a structural background color. |
 | `--ds-cream` | `#F5F0E8` | Light section backgrounds |
 | `--ds-steel` | `#A8B0BA` | Body text on dark backgrounds |
 
@@ -127,7 +129,7 @@ vercel.json                   ← SPA rewrites + cache headers
 
 ### Design philosophy
 
-**Cinematic Industrial Premium** — deep midnight backgrounds, Performance Orange accents, Archivo Black display type, generous whitespace, asymmetric layouts, no rounded corners on structural elements, no centered purple gradients.
+**Cinematic Industrial Premium** — deep midnight backgrounds, warm-amber accents, Archivo Black display type, generous whitespace, asymmetric layouts, no rounded corners on structural elements, no centered purple gradients. The amber alludes to the familiarity of the weatherization aisle (MD Building Products' yellow) without copying it; the brand blue (PMS 3005) is reserved for TrimMaster identity moments.
 
 ---
 

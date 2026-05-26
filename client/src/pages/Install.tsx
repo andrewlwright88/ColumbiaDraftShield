@@ -138,7 +138,7 @@ export default function Install() {
               { icon: CheckCircle, label: "No special skills required" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2">
-                <Icon size={16} style={{ color: "#F26419" }} />
+                <Icon size={16} style={{ color: "#F0B500" }} />
                 <span className="text-sm" style={{ color: "#A8B0BA", fontFamily: "Inter, sans-serif" }}>
                   {label}
                 </span>
@@ -166,7 +166,7 @@ export default function Install() {
               >
                 <div
                   className="shrink-0 text-3xl lg:text-4xl"
-                  style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F26419", opacity: 0.5 }}
+                  style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F0B500", opacity: 0.5 }}
                 >
                   {step.num}
                 </div>
@@ -177,7 +177,7 @@ export default function Install() {
                     </h3>
                     <span
                       className="text-xs px-2 py-0.5 rounded-sm"
-                      style={{ backgroundColor: "rgba(242,100,25,0.15)", color: "#F26419", fontFamily: "Inter, sans-serif" }}
+                      style={{ backgroundColor: "rgba(240,181,0,0.15)", color: "#F0B500", fontFamily: "Inter, sans-serif" }}
                     >
                       {step.time}
                     </span>
@@ -211,7 +211,7 @@ export default function Install() {
               <span className="section-rule" />
               <p
                 className="text-xs font-bold tracking-[0.2em] uppercase mb-3"
-                style={{ color: "#F26419", fontFamily: "Inter, sans-serif" }}
+                style={{ color: "#F0B500", fontFamily: "Inter, sans-serif" }}
               >
                 Installing in cold weather
               </p>
@@ -236,7 +236,7 @@ export default function Install() {
                     className="flex items-start gap-3 reveal"
                     style={{ color: "#0E1929", fontFamily: "Inter, sans-serif" }}
                   >
-                    <CheckCircle size={18} className="shrink-0 mt-0.5" style={{ color: "#F26419" }} />
+                    <CheckCircle size={18} className="shrink-0 mt-0.5" style={{ color: "#F0B500" }} />
                     <span className="text-sm leading-relaxed">{tip}</span>
                   </li>
                 ))}

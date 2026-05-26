@@ -45,7 +45,7 @@ export default function ProductDetail() {
         <Navigation />
         <div className="container max-w-6xl mx-auto px-6 pt-40 pb-20 text-center">
           <h1 className="font-['Archivo_Black'] text-4xl text-white mb-4">Product Not Found</h1>
-          <Link href="/product" className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase">
+          <Link href="/product" className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase">
             <ArrowLeft className="w-4 h-4" /> Back to Products
           </Link>
         </div>
@@ -87,7 +87,7 @@ export default function ProductDetail() {
                   className="max-h-full w-auto object-contain"
                 />
                 {sku.badge && (
-                  <div className="absolute top-6 left-6 bg-[#F26419] text-white text-xs font-bold px-3 py-1.5 tracking-widest uppercase z-10">
+                  <div className="absolute top-6 left-6 bg-[#F0B500] text-[#0E1929] text-xs font-bold px-3 py-1.5 tracking-widest uppercase z-10">
                     {sku.badge}
                   </div>
                 )}
@@ -101,14 +101,14 @@ export default function ProductDetail() {
                     : `${sku.width} × ${sku.depth} × ${sku.length}`}
                 </p>
                 {sku.totalFt && (
-                  <p className="font-mono text-[#F26419] text-xs">{sku.totalFt} total</p>
+                  <p className="font-mono text-[#F0B500] text-xs">{sku.totalFt} total</p>
                 )}
               </div>
             </div>
 
             {/* Copy */}
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-3">{sku.eyebrow}</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-3">{sku.eyebrow}</p>
               <h1 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight mb-4">
                 {sku.name}
               </h1>
@@ -121,7 +121,7 @@ export default function ProductDetail() {
                   href={sku.hdLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
                 >
                   Find at Home Depot <ArrowRight className="w-4 h-4" />
                 </a>
@@ -135,7 +135,7 @@ export default function ProductDetail() {
 
               {/* Guarantee badge */}
               <div className="flex items-center gap-3 border border-white/10 px-5 py-3 w-fit">
-                <Shield className="w-5 h-5 text-[#F26419]" />
+                <Shield className="w-5 h-5 text-[#F0B500]" />
                 <div>
                   <p className="text-white font-bold text-sm">5-Year Guarantee</p>
                   <p className="text-white/50 text-xs">Zero drafts or we replace it free</p>
@@ -150,7 +150,7 @@ export default function ProductDetail() {
       <section ref={whereFitsReveal.ref} className="py-24 lg:py-32 bg-white">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`transition-all duration-700 ${whereFitsReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE IT FITS</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE IT FITS</p>
             <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-12">Where it fits.</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {sku.whereFits.map((item, i) => (
@@ -160,7 +160,7 @@ export default function ProductDetail() {
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   <div className="flex items-start gap-3 mb-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#F26419] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#F0B500] shrink-0 mt-0.5" />
                     <h3 className="font-bold text-[#0E1929]">{item.location}</h3>
                   </div>
                   <p className="text-[#1A2E44]/60 text-sm leading-relaxed">{item.detail}</p>
@@ -176,7 +176,7 @@ export default function ProductDetail() {
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`grid lg:grid-cols-2 gap-16 items-start transition-all duration-700 ${constructionReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">CONSTRUCTION</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">CONSTRUCTION</p>
               <h2 className="font-['Archivo_Black'] text-4xl text-white leading-tight mb-6">
                 What's inside every roll.
               </h2>
@@ -186,7 +186,7 @@ export default function ProductDetail() {
               </p>
               <Link
                 href="/science"
-                className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+                className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
               >
                 See the Full Engineering Story <ArrowRight className="w-4 h-4" />
               </Link>
@@ -198,7 +198,7 @@ export default function ProductDetail() {
                   className={`flex gap-5 border-b border-white/10 pb-4 last:border-0 transition-all duration-500 ${constructionReveal.visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
-                  <span className="font-['Archivo_Black'] text-[#F26419] text-xl w-8 shrink-0">{layer.num}</span>
+                  <span className="font-['Archivo_Black'] text-[#F0B500] text-xl w-8 shrink-0">{layer.num}</span>
                   <div>
                     <p className="text-white font-bold text-sm mb-1">{layer.label}</p>
                     <p className="text-white/50 text-xs leading-relaxed">{layer.detail}</p>
@@ -214,7 +214,7 @@ export default function ProductDetail() {
       <section ref={specsReveal.ref} className="bg-[#F5F0E8] py-24 lg:py-32">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`transition-all duration-700 ${specsReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">SPECIFICATIONS</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">SPECIFICATIONS</p>
             <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-12">Specifications</h2>
             <div className="grid md:grid-cols-2 gap-0 border border-[#0E1929]/10 bg-white">
               <div className="flex gap-6 p-5 border-b border-r border-[#0E1929]/10">
@@ -251,18 +251,18 @@ export default function ProductDetail() {
         <section ref={relatedReveal.ref} className="bg-white py-24">
           <div className="container max-w-6xl mx-auto px-6 lg:px-8">
             <div className={`transition-all duration-700 ${relatedReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">OTHER SIZES</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">OTHER SIZES</p>
               <h2 className="font-['Archivo_Black'] text-3xl text-[#0E1929] mb-10">Other sizes in the line.</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {related.map((r, i) => (
                   <Link
                     key={r.slug}
                     href={`/product/${r.slug}`}
-                    className={`group border border-[#0E1929]/10 p-6 hover:border-[#F26419] transition-all duration-300 ${relatedReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                    className={`group border border-[#0E1929]/10 p-6 hover:border-[#F0B500] transition-all duration-300 ${relatedReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
                     style={{ transitionDelay: `${i * 80}ms` }}
                   >
                     {r.badge && (
-                      <span className="inline-block bg-[#F26419] text-white text-[10px] font-bold px-2 py-0.5 tracking-wider uppercase mb-3">
+                      <span className="inline-block bg-[#F0B500] text-[#0E1929] text-[10px] font-bold px-2 py-0.5 tracking-wider uppercase mb-3">
                         {r.badge}
                       </span>
                     )}
@@ -271,7 +271,7 @@ export default function ProductDetail() {
                       {r.width} × {r.depth} · {r.length}
                     </p>
                     <p className="text-[#1A2E44]/60 text-xs leading-relaxed mb-4">{r.tagline}</p>
-                    <span className="inline-flex items-center gap-1 text-[#F26419] text-xs font-bold tracking-wider uppercase group-hover:gap-2 transition-all duration-200">
+                    <span className="inline-flex items-center gap-1 text-[#F0B500] text-xs font-bold tracking-wider uppercase group-hover:gap-2 transition-all duration-200">
                       View <ArrowRight className="w-3 h-3" />
                     </span>
                   </Link>
@@ -294,7 +294,7 @@ export default function ProductDetail() {
               href={sku.hdLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               Find at Home Depot <ArrowRight className="w-4 h-4" />
             </a>

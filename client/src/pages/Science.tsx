@@ -49,7 +49,7 @@ export default function Science() {
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(14,25,41,0.7) 0%, rgba(14,25,41,1) 100%)" }} />
         <div className="container max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SCIENCE</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SCIENCE</p>
           <h1 className="font-['Archivo_Black'] text-5xl lg:text-6xl text-white leading-tight mb-5">
             Why most weatherstripping<br />fails — and how we fixed it.
           </h1>
@@ -65,7 +65,7 @@ export default function Science() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 stagger">
             {SCIENCE_FACTS.map((fact) => (
               <div key={fact.stat} className="reveal">
-                <div className="font-['Archivo_Black'] text-5xl text-[#F26419] mb-2" style={{ letterSpacing: "-0.03em" }}>
+                <div className="font-['Archivo_Black'] text-5xl text-[#F0B500] mb-2" style={{ letterSpacing: "-0.03em" }}>
                   {fact.stat}
                 </div>
                 <div className="text-sm font-semibold text-white mb-1" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -92,13 +92,13 @@ export default function Science() {
               />
             </div>
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PROBLEM</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PROBLEM</p>
               <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-6 leading-tight">
                 Why standard foam tape fails in 2–3 years.
               </h2>
               <div className="space-y-5 stagger">
                 {FAILURE_MODES.map((item) => (
-                  <div key={item.title} className="reveal border-l-2 border-[#F26419] pl-5">
+                  <div key={item.title} className="reveal border-l-2 border-[#F0B500] pl-5">
                     <h4 className="text-sm font-semibold text-[#0E1929] mb-1" style={{ fontFamily: "Inter, sans-serif" }}>
                       {item.title}
                     </h4>
@@ -118,7 +118,7 @@ export default function Science() {
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SOLUTION</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SOLUTION</p>
               <h2 className="font-['Archivo_Black'] text-4xl text-white mb-6 leading-tight">
                 Five layers. One seal that lasts.
               </h2>
@@ -129,7 +129,7 @@ export default function Science() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/product"
-                  className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-6 py-3 text-xs tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-6 py-3 text-xs tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
                 >
                   Shop DraftShield <ArrowRight size={16} />
                 </Link>
@@ -147,7 +147,7 @@ export default function Science() {
                   key={i}
                   className="reveal flex gap-5 p-5 bg-[#0E1929]/50 border border-white/10"
                 >
-                  <span className="font-['Archivo_Black'] text-[#F26419] text-xl w-8 shrink-0">{layer.num}</span>
+                  <span className="font-['Archivo_Black'] text-[#F0B500] text-xl w-8 shrink-0">{layer.num}</span>
                   <div>
                     <p className="text-white font-bold text-sm mb-1" style={{ fontFamily: "Inter, sans-serif" }}>{layer.label}</p>
                     <p className="text-white/50 text-xs leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{layer.detail}</p>
@@ -164,7 +164,7 @@ export default function Science() {
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE MATERIALS</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE MATERIALS</p>
               <h2 className="font-['Archivo_Black'] text-4xl text-white mb-6 leading-tight">
                 Closed-cell foam. The difference is structural.
               </h2>
@@ -182,7 +182,7 @@ export default function Science() {
                 href={HOME_DEPOT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
               >
                 Find at Home Depot <ArrowRight size={16} />
               </a>

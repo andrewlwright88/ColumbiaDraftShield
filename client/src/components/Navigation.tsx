@@ -71,7 +71,7 @@ export default function Navigation() {
               className="text-xl tracking-tight"
               style={{ fontFamily: "'Archivo Black', sans-serif", letterSpacing: "-0.02em", color: "#0E1929" }}
             >
-              DRAFT<span style={{ color: "#F26419" }}>SHIELD</span>
+              DRAFT<span style={{ color: "#F0B500" }}>SHIELD</span>
               <span className="text-xs align-super ml-0.5" style={{ fontFamily: "Inter, sans-serif", fontWeight: 400, color: "#0E1929", opacity: 0.5 }}>™</span>
             </span>
             <span
@@ -147,7 +147,7 @@ export default function Navigation() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               Find at Home Depot
             </a>
@@ -195,7 +195,7 @@ export default function Navigation() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center justify-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-6 py-3 text-sm tracking-widest uppercase transition-all duration-200"
+              className="mt-4 inline-flex items-center justify-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-6 py-3 text-sm tracking-widest uppercase transition-all duration-200"
             >
               Find at Home Depot
             </a>

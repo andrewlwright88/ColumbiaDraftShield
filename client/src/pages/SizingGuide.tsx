@@ -92,7 +92,7 @@ export default function SizingGuide() {
       {/* ── Header ── */}
       <section className="bg-[#0E1929] pt-32 pb-16">
         <div className="container max-w-3xl mx-auto px-6 lg:px-8">
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">SIZING GUIDE</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">SIZING GUIDE</p>
           <h1 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight mb-4">
             Find your size in 3 questions.
           </h1>
@@ -125,7 +125,7 @@ export default function SizingGuide() {
                 </div>
                 <div className="h-1 bg-[#0E1929]/10 rounded-full">
                   <div
-                    className="h-full bg-[#F26419] rounded-full transition-all duration-500"
+                    className="h-full bg-[#F0B500] rounded-full transition-all duration-500"
                     style={{ width: `${progress}%` }}
                   />
                 </div>
@@ -147,14 +147,14 @@ export default function SizingGuide() {
                   <button
                     key={opt.value}
                     onClick={() => handleAnswer(opt.value)}
-                    className="w-full text-left bg-white border border-[#0E1929]/10 hover:border-[#F26419] p-5 transition-all duration-200 group active:scale-[0.99]"
+                    className="w-full text-left bg-white border border-[#0E1929]/10 hover:border-[#F0B500] p-5 transition-all duration-200 group active:scale-[0.99]"
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <p className="font-bold text-[#0E1929] mb-1">{opt.label}</p>
                         <p className="text-[#1A2E44]/60 text-sm">{opt.detail}</p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-[#F26419] shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <ArrowRight className="w-4 h-4 text-[#F0B500] shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </button>
                 ))}
@@ -164,8 +164,8 @@ export default function SizingGuide() {
             <div>
               {/* Result */}
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-[#F26419]/10 border border-[#F26419]/30 px-4 py-2 mb-6">
-                  <span className="text-[#F26419] text-xs font-bold tracking-widest uppercase">Your Recommendation</span>
+                <div className="inline-flex items-center gap-2 bg-[#F0B500]/10 border border-[#F0B500]/30 px-4 py-2 mb-6">
+                  <span className="text-[#F0B500] text-xs font-bold tracking-widest uppercase">Your Recommendation</span>
                 </div>
                 <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-4">
                   {recommendedSku.name}
@@ -182,16 +182,16 @@ export default function SizingGuide() {
 
               {/* Why this size */}
               <div className="bg-white border border-[#0E1929]/10 p-8 mb-8">
-                <p className="text-[#F26419] text-xs font-bold tracking-widest uppercase mb-4">WHY THIS SIZE</p>
+                <p className="text-[#F0B500] text-xs font-bold tracking-widest uppercase mb-4">WHY THIS SIZE</p>
                 <p className="text-[#1A2E44]/80 leading-relaxed">{recommendedSku.body}</p>
               </div>
 
               {/* Where it fits */}
               <div className="bg-[#0E1929] p-8 mb-8">
-                <p className="text-[#F26419] text-xs font-bold tracking-widest uppercase mb-6">WHERE IT FITS</p>
+                <p className="text-[#F0B500] text-xs font-bold tracking-widest uppercase mb-6">WHERE IT FITS</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {recommendedSku.whereFits.map((item, i) => (
-                    <div key={i} className="border-l-2 border-[#F26419] pl-4">
+                    <div key={i} className="border-l-2 border-[#F0B500] pl-4">
                       <p className="text-white font-bold text-sm mb-1">{item.location}</p>
                       <p className="text-white/50 text-xs">{item.detail}</p>
                     </div>
@@ -205,7 +205,7 @@ export default function SizingGuide() {
                   href={recommendedSku.hdLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
                 >
                   Find at Home Depot <ArrowRight className="w-4 h-4" />
                 </a>
@@ -239,7 +239,7 @@ export default function SizingGuide() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/product"
-              className="inline-flex items-center gap-2 text-[#F26419] font-bold text-xs tracking-widest uppercase hover:gap-3 transition-all duration-200"
+              className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-xs tracking-widest uppercase hover:gap-3 transition-all duration-200"
             >
               All Products <ArrowRight className="w-3 h-3" />
             </Link>

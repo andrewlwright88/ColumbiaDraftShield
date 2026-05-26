@@ -15,7 +15,7 @@ export default function NotFound() {
         <div className="text-center px-6">
           <div
             className="text-8xl mb-4"
-            style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F26419", opacity: 0.4 }}
+            style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F0B500", opacity: 0.4 }}
           >
             404
           </div>

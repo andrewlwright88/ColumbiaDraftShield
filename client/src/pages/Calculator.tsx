@@ -45,7 +45,7 @@ export default function Calculator() {
       {/* Hero */}
       <div className="pt-32 pb-16 bg-[#0E1929]">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">SAVINGS CALCULATOR</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">SAVINGS CALCULATOR</p>
           <h1 className="font-['Archivo_Black'] text-5xl lg:text-6xl text-white leading-tight mb-4">
             How much are you<br />losing to drafts?
           </h1>
@@ -62,7 +62,7 @@ export default function Calculator() {
             {/* Input panel */}
             <div className="p-8 lg:p-10 bg-[#1A2E44] border border-white/10">
               <div className="flex items-center gap-3 mb-8">
-                <CalcIcon size={20} className="text-[#F26419]" />
+                <CalcIcon size={20} className="text-[#F0B500]" />
                 <h2 className="font-['Archivo_Black'] text-xl text-white">Enter Your Home Details</h2>
               </div>
 
@@ -76,8 +76,8 @@ export default function Calculator() {
                     onChange={e => setZip(e.target.value.replace(/\D/g, "").slice(0, 5))}
                     placeholder="e.g. 60614"
                     maxLength={5}
-                    className="w-full px-4 py-3 text-white placeholder-white/30 text-base outline-none focus:ring-2 focus:ring-[#F26419]/50 bg-[#0E1929]/60 border border-white/20"
-                    style={{ caretColor: "#F26419", fontFamily: "Inter, sans-serif" }}
+                    className="w-full px-4 py-3 text-white placeholder-white/30 text-base outline-none focus:ring-2 focus:ring-[#F0B500]/50 bg-[#0E1929]/60 border border-white/20"
+                    style={{ caretColor: "#F0B500", fontFamily: "Inter, sans-serif" }}
                   />
                   <p className="text-xs mt-1.5 text-white/50" style={{ fontFamily: "Inter, sans-serif" }}>
                     Used to determine your IECC climate zone
@@ -88,7 +88,7 @@ export default function Calculator() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <label className="text-sm font-semibold text-white">Home Size</label>
-                    <span className="font-['Archivo_Black'] text-lg text-[#F26419]">
+                    <span className="font-['Archivo_Black'] text-lg text-[#F0B500]">
                       {sqft.toLocaleString()} sq ft
                     </span>
                   </div>
@@ -97,8 +97,8 @@ export default function Calculator() {
                     onChange={e => setSqft(Number(e.target.value))}
                     className="w-full h-2 rounded-full appearance-none cursor-pointer"
                     style={{
-                      background: `linear-gradient(to right, #F26419 0%, #F26419 ${((sqft - 500) / 4500) * 100}%, rgba(168,176,186,0.2) ${((sqft - 500) / 4500) * 100}%, rgba(168,176,186,0.2) 100%)`,
-                      accentColor: "#F26419",
+                      background: `linear-gradient(to right, #F0B500 0%, #F0B500 ${((sqft - 500) / 4500) * 100}%, rgba(168,176,186,0.2) ${((sqft - 500) / 4500) * 100}%, rgba(168,176,186,0.2) 100%)`,
+                      accentColor: "#F0B500",
                     }}
                   />
                   <div className="flex justify-between text-xs mt-1 text-white/40">
@@ -110,7 +110,7 @@ export default function Calculator() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <label className="text-sm font-semibold text-white">Current Weatherstripping Age</label>
-                    <span className="font-['Archivo_Black'] text-lg text-[#F26419]">
+                    <span className="font-['Archivo_Black'] text-lg text-[#F0B500]">
                       {age} yr{age !== 1 ? "s" : ""}
                     </span>
                   </div>
@@ -119,8 +119,8 @@ export default function Calculator() {
                     onChange={e => setAge(Number(e.target.value))}
                     className="w-full h-2 rounded-full appearance-none cursor-pointer"
                     style={{
-                      background: `linear-gradient(to right, #F26419 0%, #F26419 ${(age / 20) * 100}%, rgba(168,176,186,0.2) ${(age / 20) * 100}%, rgba(168,176,186,0.2) 100%)`,
-                      accentColor: "#F26419",
+                      background: `linear-gradient(to right, #F0B500 0%, #F0B500 ${(age / 20) * 100}%, rgba(168,176,186,0.2) ${(age / 20) * 100}%, rgba(168,176,186,0.2) 100%)`,
+                      accentColor: "#F0B500",
                     }}
                   />
                   <div className="flex justify-between text-xs mt-1 text-white/40">
@@ -130,7 +130,7 @@ export default function Calculator() {
 
                 <button
                   onClick={handleCalculate}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
                 >
                   Calculate My Savings <ArrowRight size={18} />
                 </button>
@@ -149,8 +149,8 @@ export default function Calculator() {
               ) : (
                 <div className="space-y-4">
                   {zone && (
-                    <div className="p-5 bg-[#F26419]/10 border border-[#F26419]/25">
-                      <p className="text-[#F26419] text-xs font-bold tracking-widest uppercase mb-1">Your Climate Zone</p>
+                    <div className="p-5 bg-[#F0B500]/10 border border-[#F0B500]/25">
+                      <p className="text-[#F0B500] text-xs font-bold tracking-widest uppercase mb-1">Your Climate Zone</p>
                       <p className="font-['Archivo_Black'] text-xl text-white">Zone {zone.zone} — {zone.label}</p>
                     </div>
                   )}
@@ -162,7 +162,7 @@ export default function Calculator() {
                   ].map((item) => (
                     <div key={item.label} className="p-6 bg-[#1A2E44] border border-white/10">
                       <p className="text-white/50 text-xs uppercase tracking-widest mb-1" style={{ fontFamily: "Inter, sans-serif" }}>{item.label}</p>
-                      <p className="font-['Archivo_Black'] text-4xl mb-1" style={{ color: item.accent ? "#F26419" : "#FFFFFF", letterSpacing: "-0.02em" }}>
+                      <p className="font-['Archivo_Black'] text-4xl mb-1" style={{ color: item.accent ? "#F0B500" : "#FFFFFF", letterSpacing: "-0.02em" }}>
                         {item.value}
                       </p>
                       <p className="text-white/40 text-xs" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
@@ -195,7 +195,7 @@ export default function Calculator() {
                       <div className="flex gap-3">
                         <Link
                           href={`/product/${s.slug}`}
-                          className="inline-flex items-center gap-1.5 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200"
+                          className="inline-flex items-center gap-1.5 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200"
                         >
                           View Details
                         </Link>

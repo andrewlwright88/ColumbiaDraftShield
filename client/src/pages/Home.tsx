@@ -1,7 +1,7 @@
 /**
  * DraftShield™ Home Page — v2
  * Design: Cinematic Industrial Premium
- * Palette: --ds-midnight (#0E1929) / --ds-navy (#1A2E44) / --ds-orange (#F26419) / --ds-cream (#F5F0E8)
+ * Palette: --ds-midnight (#0E1929) / --ds-navy (#1A2E44) / --ds-orange (#F0B500) / --ds-cream (#F5F0E8)
  * Typography: Archivo Black (display) / Inter (body)
  * Sections: Hero → Problem → Solution → Guarantee → Product Overview → Where It Works → Savings Teaser → Install Preview → Brand Closing → Final CTA
  */
@@ -70,14 +70,14 @@ function Hero() {
       <div className="relative z-10 container max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl">
           {/* Eyebrow */}
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-6">
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-6">
             BUILT FOR COLD. ENGINEERED FOR HOLD.
           </p>
 
           {/* Headline */}
           <h1 className="font-['Archivo_Black'] text-6xl sm:text-7xl lg:text-8xl leading-[0.95] text-white mb-6">
             Zero drafts.<br />
-            <span className="text-[#F26419]">Guaranteed.</span>
+            <span className="text-[#F0B500]">Guaranteed.</span>
           </h1>
 
           {/* Sub-headline */}
@@ -92,7 +92,7 @@ function Hero() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               Find at Home Depot <ArrowRight className="w-4 h-4" />
             </a>
@@ -131,7 +131,7 @@ function ProblemSection() {
         <div className={`grid lg:grid-cols-2 gap-16 items-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           {/* Left: copy */}
           <div>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">
               WHY MOST FOAM TAPE FAILS
             </p>
             <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-[#0E1929] leading-tight mb-8">
@@ -150,7 +150,7 @@ function ProblemSection() {
             </div>
             <Link
               href="/science"
-              className="inline-flex items-center gap-2 mt-8 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+              className="inline-flex items-center gap-2 mt-8 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
             >
               Read the Full Science <ArrowRight className="w-4 h-4" />
             </Link>
@@ -161,7 +161,7 @@ function ProblemSection() {
             {SCIENCE_FACTS.map((f, i) => (
               <div
                 key={i}
-                className="border-l-2 border-[#F26419] pl-6 py-2"
+                className="border-l-2 border-[#F0B500] pl-6 py-2"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <div className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-1">{f.stat}</div>
@@ -201,7 +201,7 @@ function SolutionSection() {
     <section ref={ref} className="bg-[#0E1929] py-24 lg:py-32">
       <div className="container max-w-6xl mx-auto px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SOLUTION</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SOLUTION</p>
           <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight">
             Built to seal.<br />Engineered to last.
           </h2>
@@ -211,11 +211,11 @@ function SolutionSection() {
           {features.map((f, i) => (
             <div
               key={i}
-              className={`border border-white/10 p-8 hover:border-[#F26419]/40 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`border border-white/10 p-8 hover:border-[#F0B500]/40 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
-              <div className="w-10 h-10 bg-[#F26419]/15 flex items-center justify-center mb-6">
-                <f.icon className="w-5 h-5 text-[#F26419]" />
+              <div className="w-10 h-10 bg-[#F0B500]/15 flex items-center justify-center mb-6">
+                <f.icon className="w-5 h-5 text-[#F0B500]" />
               </div>
               <h3 className="font-['Archivo_Black'] text-white text-lg mb-4">{f.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed">{f.body}</p>
@@ -226,7 +226,7 @@ function SolutionSection() {
         <div className="text-center mt-12">
           <Link
             href="/science"
-            className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
           >
             See the Engineering <ArrowRight className="w-4 h-4" />
           </Link>
@@ -242,7 +242,7 @@ function GuaranteeSection() {
   return (
     <section ref={ref} className="bg-[#1A2E44] py-24 lg:py-32">
       <div className={`container max-w-4xl mx-auto px-6 lg:px-8 text-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-6">
+        <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-6">
           THE 5-YEAR GUARANTEE
         </p>
         <h2 className="font-['Archivo_Black'] text-5xl lg:text-6xl text-white leading-tight mb-8">
@@ -258,14 +258,14 @@ function GuaranteeSection() {
             Backed by Columbia Aluminum Products — 78 years of precision manufacturing in Corona, California.
           </p>
         </div>
-        <div className="inline-flex items-center gap-3 border border-[#F26419]/40 px-8 py-4 mb-8">
-          <Shield className="w-6 h-6 text-[#F26419]" />
+        <div className="inline-flex items-center gap-3 border border-[#F0B500]/40 px-8 py-4 mb-8">
+          <Shield className="w-6 h-6 text-[#F0B500]" />
           <span className="font-['Archivo_Black'] text-white text-xl">5 YEAR GUARANTEE</span>
         </div>
         <div className="block">
           <Link
             href="/guarantee"
-            className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
           >
             Read the Full Guarantee <ArrowRight className="w-4 h-4" />
           </Link>
@@ -282,7 +282,7 @@ function ProductOverviewSection() {
     <section ref={ref} className="bg-[#F5F0E8] py-24 lg:py-32">
       <div className="container max-w-6xl mx-auto px-6 lg:px-8">
         <div className={`mb-14 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PRODUCT</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PRODUCT</p>
           <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-[#0E1929] leading-tight mb-4">
             One product. Five sizes.<br />Every gap in your home.
           </h2>
@@ -297,26 +297,26 @@ function ProductOverviewSection() {
             <Link
               key={sku.slug}
               href={`/product/${sku.slug}`}
-              className={`group relative bg-white border border-[#0E1929]/10 p-6 hover:border-[#F26419] hover:shadow-lg transition-all duration-300 flex flex-col ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`group relative bg-white border border-[#0E1929]/10 p-6 hover:border-[#F0B500] hover:shadow-lg transition-all duration-300 flex flex-col ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               {sku.badge && (
-                <span className="absolute top-4 right-4 bg-[#F26419] text-white text-[10px] font-bold px-2 py-1 tracking-wider uppercase">
+                <span className="absolute top-4 right-4 bg-[#F0B500] text-[#0E1929] text-[10px] font-bold px-2 py-1 tracking-wider uppercase">
                   {sku.badge}
                 </span>
               )}
               <div className="mb-4">
                 <div className="w-12 h-12 bg-[#0E1929] flex items-center justify-center mb-4">
-                  <div className="w-6 h-3 bg-[#F26419] rounded-sm" />
+                  <div className="w-6 h-3 bg-[#F0B500] rounded-sm" />
                 </div>
-                <p className="text-[#F26419] text-[10px] font-bold tracking-widest uppercase mb-1">{sku.eyebrow}</p>
+                <p className="text-[#F0B500] text-[10px] font-bold tracking-widest uppercase mb-1">{sku.eyebrow}</p>
                 <h3 className="font-['Archivo_Black'] text-[#0E1929] text-base leading-tight mb-2">{sku.shortName}</h3>
                 <p className="text-[#1A2E44]/60 text-xs font-mono mb-3">
                   {sku.totalFt ? `3× ${sku.width} × ${sku.depth} · ${sku.totalFt}` : `${sku.width} × ${sku.depth} · ${sku.length}`}
                 </p>
                 <p className="text-[#1A2E44]/70 text-xs leading-relaxed">{sku.tagline}</p>
               </div>
-              <div className="mt-auto flex items-center gap-1 text-[#F26419] text-xs font-bold tracking-wider uppercase group-hover:gap-2 transition-all duration-200">
+              <div className="mt-auto flex items-center gap-1 text-[#F0B500] text-xs font-bold tracking-wider uppercase group-hover:gap-2 transition-all duration-200">
                 View Product <ArrowRight className="w-3 h-3" />
               </div>
             </Link>
@@ -326,7 +326,7 @@ function ProductOverviewSection() {
         <div className="mt-10 text-center">
           <Link
             href="/install/sizing-guide"
-            className="inline-flex items-center gap-2 text-[#0E1929] font-bold text-sm tracking-widest uppercase hover:text-[#F26419] hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-[#0E1929] font-bold text-sm tracking-widest uppercase hover:text-[#F0B500] hover:gap-3 transition-all duration-200"
           >
             Not Sure Which Size? Use the Sizing Guide <ArrowRight className="w-4 h-4" />
           </Link>
@@ -343,7 +343,7 @@ function WhereItWorksSection() {
     <section ref={ref} className="bg-[#0E1929] py-24 lg:py-32">
       <div className="container max-w-6xl mx-auto px-6 lg:px-8">
         <div className={`mb-14 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE TO APPLY</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE TO APPLY</p>
           <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight mb-4">
             Built for windows.<br />Works on a lot more.
           </h2>
@@ -358,12 +358,12 @@ function WhereItWorksSection() {
           {APP_ICONS.map(({ icon: Icon, label, sub }, i) => (
             <div
               key={label}
-              className={`border border-white/10 p-6 text-center hover:border-[#F26419]/40 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`border border-white/10 p-6 text-center hover:border-[#F0B500]/40 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               <div className="flex justify-center mb-4">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-[#F26419]" />
+                  <Icon className="w-6 h-6 text-[#F0B500]" />
                 </div>
               </div>
               <p className="text-white font-bold text-sm mb-1">{label}</p>
@@ -375,7 +375,7 @@ function WhereItWorksSection() {
         <div className="text-center">
           <Link
             href="/where-to-apply"
-            className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+            className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
           >
             See All Applications <ArrowRight className="w-4 h-4" />
           </Link>
@@ -395,10 +395,10 @@ function SavingsTeaser() {
       <div className={`container max-w-6xl mx-auto px-6 lg:px-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SAVINGS STORY</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE SAVINGS STORY</p>
             <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-[#0E1929] leading-tight mb-6">
               $200+ per year.<br />
-              <span className="text-[#F26419]">And a 30% federal tax credit.</span>
+              <span className="text-[#F0B500]">And a 30% federal tax credit.</span>
             </h2>
             <p className="text-[#1A2E44]/70 leading-relaxed mb-4">
               The IRA Section 25C tax credit covers 30% of weatherization purchases — up to $1,200 per year.
@@ -418,18 +418,18 @@ function SavingsTeaser() {
                 maxLength={5}
                 value={zip}
                 onChange={(e) => setZip(e.target.value.replace(/\D/g, ""))}
-                className="flex-1 border border-[#0E1929]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#F26419] transition-colors"
+                className="flex-1 border border-[#0E1929]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#F0B500] transition-colors"
               />
               <Link
                 href={`/savings${zip.length === 5 ? `?zip=${zip}` : ""}`}
-                className="bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-6 py-3 text-sm tracking-wider uppercase transition-colors whitespace-nowrap"
+                className="bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-6 py-3 text-sm tracking-wider uppercase transition-colors whitespace-nowrap"
               >
                 Calculate →
               </Link>
             </div>
             <p className="text-[#1A2E44]/50 text-xs">
               Or{" "}
-              <Link href="/savings" className="text-[#F26419] hover:underline">
+              <Link href="/savings" className="text-[#F0B500] hover:underline">
                 go to the full calculator →
               </Link>
             </p>
@@ -463,7 +463,7 @@ function InstallPreview() {
       <div className={`container max-w-6xl mx-auto px-6 lg:px-8 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">INSTALLATION</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">INSTALLATION</p>
             <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight mb-6">
               Install in 20 minutes.<br />No tools beyond scissors.
             </h2>
@@ -478,7 +478,7 @@ function InstallPreview() {
             </div>
             <Link
               href="/install"
-              className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+              className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
             >
               Watch All Install Videos <ArrowRight className="w-4 h-4" />
             </Link>
@@ -497,7 +497,7 @@ function InstallPreview() {
                 className={`flex gap-5 items-start border-b border-white/10 pb-4 last:border-0 transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <span className="font-['Archivo_Black'] text-[#F26419] text-2xl leading-none mt-1 w-8 shrink-0">{s.n}</span>
+                <span className="font-['Archivo_Black'] text-[#F0B500] text-2xl leading-none mt-1 w-8 shrink-0">{s.n}</span>
                 <div>
                   <p className="text-white font-bold mb-1">{s.step}</p>
                   <p className="text-white/50 text-sm">{s.detail}</p>
@@ -518,7 +518,7 @@ function TestimonialsSection() {
     <section ref={ref} className="bg-[#F5F0E8] py-24 lg:py-32">
       <div className="container max-w-6xl mx-auto px-6 lg:px-8">
         <div className={`text-center mb-14 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">REAL HOMES. REAL RESULTS.</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">REAL HOMES. REAL RESULTS.</p>
           <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929]">What homeowners say.</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -530,7 +530,7 @@ function TestimonialsSection() {
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(t.stars)].map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-[#F26419] text-[#F26419]" />
+                  <Star key={j} className="w-4 h-4 fill-[#F0B500] text-[#F0B500]" />
                 ))}
               </div>
               <p className="text-[#1A2E44]/80 text-sm leading-relaxed mb-6 italic">"{t.quote}"</p>
@@ -556,17 +556,17 @@ function BrandClosing() {
         <div className="absolute inset-0 bg-[#0E1929]/70" />
       </div>
       <div className={`relative z-10 container max-w-4xl mx-auto px-6 lg:px-8 text-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-6">SINCE 1947</p>
+        <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-6">SINCE 1947</p>
         <h2 className="font-['Archivo_Black'] text-4xl lg:text-5xl text-white leading-tight mb-6">
           Columbia Aluminum Products<br />
           has been building hardware for<br />
           American homes for 78 years.<br />
-          <span className="text-[#F26419]">DraftShield is what we built next.</span>
+          <span className="text-[#F0B500]">DraftShield is what we built next.</span>
         </h2>
         <p className="text-white/50 mb-10">Made in California. Engineered for every climate.</p>
         <Link
           href="/about"
-          className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+          className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
         >
           The Columbia Story <ArrowRight className="w-4 h-4" />
         </Link>
@@ -586,7 +586,7 @@ function FinalCTA() {
             href={HOME_DEPOT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+            className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
           >
             Find at Home Depot <ArrowRight className="w-4 h-4" />
           </a>

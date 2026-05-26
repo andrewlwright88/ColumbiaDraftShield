@@ -47,7 +47,7 @@ export default function Pro() {
         <div className="container relative z-10">
           <div
             className="inline-block px-3 py-1 rounded-sm text-xs font-semibold mb-4 uppercase tracking-widest"
-            style={{ backgroundColor: "#F26419", color: "#FFFFFF", fontFamily: "Inter, sans-serif" }}
+            style={{ backgroundColor: "#F0B500", color: "#FFFFFF", fontFamily: "Inter, sans-serif" }}
           >
             Pro Program
           </div>
@@ -81,7 +81,7 @@ export default function Pro() {
               <ul className="space-y-3 stagger">
                 {PRO_BENEFITS.map((b) => (
                   <li key={b} className="flex items-start gap-3 reveal">
-                    <Check size={16} className="mt-0.5 shrink-0" style={{ color: "#F26419" }} />
+                    <Check size={16} className="mt-0.5 shrink-0" style={{ color: "#F0B500" }} />
                     <span className="text-sm text-white/80" style={{ fontFamily: "Inter, sans-serif" }}>{b}</span>
                   </li>
                 ))}

@@ -49,10 +49,10 @@ export default function Products() {
           ref={heroReveal.ref}
           className={`relative z-10 container max-w-6xl mx-auto px-6 lg:px-8 transition-all duration-700 ${heroReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PRODUCT</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">THE PRODUCT</p>
           <h1 className="font-['Archivo_Black'] text-5xl lg:text-7xl text-white leading-tight mb-6">
             One foam strip.<br />
-            <span className="text-[#F26419]">Engineered to outlast standard foam tape.</span>
+            <span className="text-[#F0B500]">Engineered to outlast standard foam tape.</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
             DraftShield is a single product — a premium adhesive-backed foam weatherstrip — available in five sizes.
@@ -61,7 +61,7 @@ export default function Products() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/install/sizing-guide"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               Find My Size <ArrowRight className="w-4 h-4" />
             </Link>
@@ -81,7 +81,7 @@ export default function Products() {
       <section ref={sizesReveal.ref} className="py-24 lg:py-32">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`mb-14 transition-all duration-700 ${sizesReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-3">THE 5 SIZES</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-3">THE 5 SIZES</p>
             <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929]">Pick a size by gap, not by application.</h2>
           </div>
 
@@ -89,7 +89,7 @@ export default function Products() {
             {SKUS.map((sku, i) => (
               <div
                 key={sku.slug}
-                className={`group bg-white border border-[#0E1929]/10 hover:border-[#F26419] transition-all duration-300 ${sizesReveal.visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
+                className={`group bg-white border border-[#0E1929]/10 hover:border-[#F0B500] transition-all duration-300 ${sizesReveal.visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <div className="grid md:grid-cols-[1fr_auto] items-center p-6 gap-6">
@@ -97,12 +97,12 @@ export default function Products() {
                     {/* Size indicator */}
                     <div className="flex items-center gap-4">
                       {sku.badge && (
-                        <span className="bg-[#F26419] text-white text-[10px] font-bold px-2 py-1 tracking-wider uppercase whitespace-nowrap">
+                        <span className="bg-[#F0B500] text-[#0E1929] text-[10px] font-bold px-2 py-1 tracking-wider uppercase whitespace-nowrap">
                           {sku.badge}
                         </span>
                       )}
                       <div>
-                        <p className="text-[#F26419] text-[10px] font-bold tracking-widest uppercase">{sku.eyebrow}</p>
+                        <p className="text-[#F0B500] text-[10px] font-bold tracking-widest uppercase">{sku.eyebrow}</p>
                         <h3 className="font-['Archivo_Black'] text-[#0E1929] text-xl">{sku.name}</h3>
                       </div>
                     </div>
@@ -120,7 +120,7 @@ export default function Products() {
                   </div>
                   <Link
                     href={`/product/${sku.slug}`}
-                    className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-wider uppercase whitespace-nowrap group-hover:gap-3 transition-all duration-200"
+                    className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-wider uppercase whitespace-nowrap group-hover:gap-3 transition-all duration-200"
                   >
                     View Product <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -136,7 +136,7 @@ export default function Products() {
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`grid lg:grid-cols-2 gap-16 items-start transition-all duration-700 ${constructionReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div>
-              <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHAT'S INSIDE EVERY ROLL</p>
+              <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHAT'S INSIDE EVERY ROLL</p>
               <h2 className="font-['Archivo_Black'] text-4xl text-white leading-tight mb-6">
                 What's inside every roll.
               </h2>
@@ -146,7 +146,7 @@ export default function Products() {
               </p>
               <Link
                 href="/science"
-                className="inline-flex items-center gap-2 text-[#F26419] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
+                className="inline-flex items-center gap-2 text-[#F0B500] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-200"
               >
                 See the Full Engineering Story <ArrowRight className="w-4 h-4" />
               </Link>
@@ -158,7 +158,7 @@ export default function Products() {
                   className={`flex gap-5 border-b border-white/10 pb-4 last:border-0 transition-all duration-500 ${constructionReveal.visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
-                  <span className="font-['Archivo_Black'] text-[#F26419] text-xl w-8 shrink-0">{layer.num}</span>
+                  <span className="font-['Archivo_Black'] text-[#F0B500] text-xl w-8 shrink-0">{layer.num}</span>
                   <div>
                     <p className="text-white font-bold text-sm mb-1">{layer.label}</p>
                     <p className="text-white/50 text-xs leading-relaxed">{layer.detail}</p>
@@ -174,7 +174,7 @@ export default function Products() {
       <section ref={specsReveal.ref} className="bg-white py-24 lg:py-32">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`transition-all duration-700 ${specsReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">SPECIFICATIONS</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">SPECIFICATIONS</p>
             <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-12">Specifications</h2>
             <div className="grid md:grid-cols-2 gap-0 border border-[#0E1929]/10">
               {SHARED_SPECS.map((spec, i) => (
@@ -191,7 +191,7 @@ export default function Products() {
       {/* ── Size Guide CTA ── */}
       <section ref={sizeGuideReveal.ref} className="bg-[#F5F0E8] py-24">
         <div className={`container max-w-4xl mx-auto px-6 lg:px-8 text-center transition-all duration-700 ${sizeGuideReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">PICK A SIZE BY GAP</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">PICK A SIZE BY GAP</p>
           <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-6">
             Not sure which size?
           </h2>
@@ -211,7 +211,7 @@ export default function Products() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200"
             >
               Find at Home Depot <ArrowRight className="w-4 h-4" />
             </a>

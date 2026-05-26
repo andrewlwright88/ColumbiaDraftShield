@@ -96,13 +96,13 @@ export default function About() {
                   <div key={item.year} className="flex gap-6 mb-6 relative reveal">
                     <div
                       className="shrink-0 w-12 text-right text-sm font-bold"
-                      style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F26419" }}
+                      style={{ fontFamily: "'Archivo Black', sans-serif", color: "#F0B500" }}
                     >
                       {item.year}
                     </div>
                     <div
                       className="shrink-0 w-2 h-2 rounded-full mt-1.5 relative z-10"
-                      style={{ backgroundColor: "#F26419" }}
+                      style={{ backgroundColor: "#F0B500" }}
                     />
                     <p className="text-sm" style={{ color: "#A8B0BA", fontFamily: "Inter, sans-serif" }}>
                       {item.event}
@@ -135,7 +135,7 @@ export default function About() {
                 className="reveal p-6 rounded-sm"
                 style={{ backgroundColor: "rgba(14,25,41,0.5)", border: "1px solid rgba(168,176,186,0.10)" }}
               >
-                <div className="section-rule" style={{ backgroundColor: "#F26419" }} />
+                <div className="section-rule" style={{ backgroundColor: "#F0B500" }} />
                 <h3 className="text-base font-semibold text-white mb-2" style={{ fontFamily: "Inter, sans-serif" }}>
                   {v.title}
                 </h3>

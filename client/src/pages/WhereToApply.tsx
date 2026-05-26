@@ -70,10 +70,10 @@ export default function WhereToApply() {
           ref={heroReveal.ref}
           className={`container max-w-6xl mx-auto px-6 lg:px-8 transition-all duration-700 ${heroReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE TO APPLY</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHERE TO APPLY</p>
           <h1 className="font-['Archivo_Black'] text-5xl lg:text-7xl text-white leading-tight mb-6">
             Built for windows.<br />
-            <span className="text-[#F26419]">Works on a lot more.</span>
+            <span className="text-[#F0B500]">Works on a lot more.</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
             DraftShield is engineered first for windows. The same product handles door jambs, garage door sides,
@@ -99,9 +99,9 @@ export default function WhereToApply() {
                   {/* Left: label */}
                   <div>
                     <div className="w-14 h-14 bg-[#0E1929] flex items-center justify-center mb-5">
-                      <Icon className="w-7 h-7 text-[#F26419]" />
+                      <Icon className="w-7 h-7 text-[#F0B500]" />
                     </div>
-                    <p className="text-[#F26419] text-[10px] font-bold tracking-widest uppercase mb-2">{app.eyebrow}</p>
+                    <p className="text-[#F0B500] text-[10px] font-bold tracking-widest uppercase mb-2">{app.eyebrow}</p>
                     <h2 className="font-['Archivo_Black'] text-3xl text-[#0E1929] mb-4">{app.headline}</h2>
                     {app.isPrimary && (
                       <span className="inline-block bg-[#0E1929] text-white text-[10px] font-bold px-3 py-1.5 tracking-widest uppercase">
@@ -117,11 +117,11 @@ export default function WhereToApply() {
                     {/* Recommended size */}
                     {recommendedSku && (
                       <div className="bg-white border border-[#0E1929]/10 p-5 mb-6">
-                        <p className="text-[#F26419] text-[10px] font-bold tracking-widest uppercase mb-2">Recommended Size</p>
+                        <p className="text-[#F0B500] text-[10px] font-bold tracking-widest uppercase mb-2">Recommended Size</p>
                         <p className="text-[#0E1929] font-bold mb-1">{app.recommendedSize}</p>
                         <Link
                           href={`/product/${recommendedSku.slug}`}
-                          className="inline-flex items-center gap-1 text-[#F26419] text-xs font-bold tracking-wider uppercase hover:gap-2 transition-all duration-200 mt-2"
+                          className="inline-flex items-center gap-1 text-[#F0B500] text-xs font-bold tracking-wider uppercase hover:gap-2 transition-all duration-200 mt-2"
                         >
                           View {recommendedSku.shortName} <ArrowRight className="w-3 h-3" />
                         </Link>
@@ -139,7 +139,7 @@ export default function WhereToApply() {
                         href={HOME_DEPOT_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-6 py-3 text-xs tracking-widest uppercase transition-all duration-200"
+                        className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-6 py-3 text-xs tracking-widest uppercase transition-all duration-200"
                       >
                         Find at Home Depot <ArrowRight className="w-3 h-3" />
                       </a>
@@ -156,7 +156,7 @@ export default function WhereToApply() {
       <section ref={notCoveredReveal.ref} className="bg-[#0E1929] py-24 lg:py-32">
         <div className="container max-w-6xl mx-auto px-6 lg:px-8">
           <div className={`transition-all duration-700 ${notCoveredReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHAT IT DOESN'T COVER</p>
+            <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">WHAT IT DOESN'T COVER</p>
             <h2 className="font-['Archivo_Black'] text-4xl text-white mb-12">
               What DraftShield doesn't cover.
             </h2>
@@ -172,7 +172,7 @@ export default function WhereToApply() {
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   <h3 className="text-white font-bold mb-2 flex items-center gap-2">
-                    <span className="w-4 h-0.5 bg-[#F26419] inline-block" />
+                    <span className="w-4 h-0.5 bg-[#F0B500] inline-block" />
                     {item.label}
                   </h3>
                   <p className="text-white/50 text-sm leading-relaxed">{item.detail}</p>
@@ -181,7 +181,7 @@ export default function WhereToApply() {
             </div>
             <p className="text-white/40 text-sm mt-8">
               Need a door sweep or garage door bottom seal?{" "}
-              <a href="mailto:support@draftshield.com" className="text-[#F26419] hover:underline">
+              <a href="mailto:support@draftshield.com" className="text-[#F0B500] hover:underline">
                 Contact us
               </a>{" "}
               — we'll point you to the right Columbia product.
@@ -193,7 +193,7 @@ export default function WhereToApply() {
       {/* ── CTA ── */}
       <section ref={ctaReveal.ref} className="bg-[#F5F0E8] py-24">
         <div className={`container max-w-4xl mx-auto px-6 lg:px-8 text-center transition-all duration-700 ${ctaReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="text-[#F26419] text-xs font-bold tracking-[0.2em] uppercase mb-4">NEXT STEP</p>
+          <p className="text-[#F0B500] text-xs font-bold tracking-[0.2em] uppercase mb-4">NEXT STEP</p>
           <h2 className="font-['Archivo_Black'] text-4xl text-[#0E1929] mb-6">
             Know where you're applying it?<br />Now find your size.
           </h2>
@@ -212,7 +212,7 @@ export default function WhereToApply() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200"
             >
               Find at Home Depot <ArrowRight className="w-4 h-4" />
             </a>

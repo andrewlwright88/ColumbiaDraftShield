@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <div className="text-white text-xl mb-3" style={{ fontFamily: "'Archivo Black', sans-serif", letterSpacing: "-0.02em" }}>
-              DRAFT<span style={{ color: "#F26419" }}>SHIELD</span>
+              DRAFT<span style={{ color: "#F0B500" }}>SHIELD</span>
               <span className="text-xs align-super ml-0.5 text-white/50" style={{ fontFamily: "Inter, sans-serif", fontWeight: 400 }}>™</span>
             </div>
             <p className="text-sm leading-relaxed mb-5 text-white/50" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -53,7 +53,7 @@ export default function Footer() {
               href={HOME_DEPOT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200"
+              className="inline-flex items-center gap-1.5 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold text-xs px-4 py-2 tracking-widest uppercase transition-all duration-200"
             >
               Find at Home Depot
             </a>

@@ -30,7 +30,7 @@ export default function Contact() {
     border: "1px solid rgba(168,176,186,0.20)",
     color: "#FFFFFF",
     fontFamily: "Inter, sans-serif",
-    caretColor: "#F26419",
+    caretColor: "#F0B500",
   };
 
   return (
@@ -69,9 +69,9 @@ export default function Contact() {
                 >
                   <div
                     className="shrink-0 w-10 h-10 rounded-sm flex items-center justify-center"
-                    style={{ backgroundColor: "rgba(242,100,25,0.15)", border: "1px solid rgba(242,100,25,0.25)" }}
+                    style={{ backgroundColor: "rgba(240,181,0,0.15)", border: "1px solid rgba(240,181,0,0.25)" }}
                   >
-                    <Icon size={18} style={{ color: "#F26419" }} />
+                    <Icon size={18} style={{ color: "#F0B500" }} />
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-widest mb-0.5" style={{ color: "#A8B0BA", fontFamily: "Inter, sans-serif" }}>
@@ -157,9 +157,9 @@ export default function Contact() {
                 >
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "rgba(242,100,25,0.15)", border: "1px solid rgba(242,100,25,0.25)" }}
+                    style={{ backgroundColor: "rgba(240,181,0,0.15)", border: "1px solid rgba(240,181,0,0.25)" }}
                   >
-                    <Mail size={28} style={{ color: "#F26419" }} />
+                    <Mail size={28} style={{ color: "#F0B500" }} />
                   </div>
                   <h3 className="text-xl text-white mb-2" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
                     Message Sent

@@ -54,7 +54,9 @@
   --ds-steel-navy: #1B2A4A;
   --ds-aluminum: #A8B0BA;
   --ds-cream: #F2EBDC;
-  --ds-performance: #F26419;
+  --ds-performance: #F0B500;       /* warm construction amber (replaced legacy orange #F26419) */
+  --ds-performance-hover: #C99700; /* darker amber for hover states */
+  --ds-brand-blue: #0073CF;        /* PMS 3005 — TrimMaster brand blue */
   --ds-crimson: #B23030;
   --ds-white: #FFFFFF;
   --ds-charcoal: #1A1F26;
@@ -152,7 +154,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #F26419;
+    background-color: #F0B500;
     color: #FFFFFF;
     font-family: 'Archivo Black', sans-serif;
     font-size: 0.875rem;
@@ -161,11 +163,11 @@
     padding: 0.75rem 1.75rem;
     border-radius: 2px;
     transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
-    box-shadow: 0 0 0 0 rgba(242,100,25,0);
+    box-shadow: 0 0 0 0 rgba(240,181,0,0);
   }
   .btn-ds-primary:hover {
     background-color: #d9571a;
-    box-shadow: 0 4px 24px rgba(242,100,25,0.35);
+    box-shadow: 0 4px 24px rgba(240,181,0,0.35);
   }
   .btn-ds-primary:active {
     transform: scale(0.97);
@@ -243,7 +245,7 @@
   .section-rule {
     width: 3rem;
     height: 2px;
-    background-color: #F26419;
+    background-color: #F0B500;
     display: block;
     margin-bottom: 1.5rem;
   }
@@ -256,7 +258,7 @@
     justify-content: center;
     width: 7rem;
     height: 7rem;
-    background-color: #F26419;
+    background-color: #F0B500;
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     color: white;
     text-align: center;

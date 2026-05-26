@@ -77,7 +77,7 @@ export default function Guarantee() {
           <span className="section-rule" />
           <p
             className="text-xs font-bold tracking-[0.2em] uppercase mb-4"
-            style={{ color: "#F26419", fontFamily: "Inter, sans-serif" }}
+            style={{ color: "#F0B500", fontFamily: "Inter, sans-serif" }}
           >
             The 5-Year Written Guarantee
           </p>
@@ -103,8 +103,8 @@ export default function Guarantee() {
             Install it per the instructions. If the seal fails before five years,
             we refund your purchase and ship a replacement.
           </p>
-          <div className="inline-flex items-center gap-3 border px-6 py-3" style={{ borderColor: "rgba(242,100,25,0.4)" }}>
-            <Shield size={18} style={{ color: "#F26419" }} />
+          <div className="inline-flex items-center gap-3 border px-6 py-3" style={{ borderColor: "rgba(240,181,0,0.4)" }}>
+            <Shield size={18} style={{ color: "#F0B500" }} />
             <span
               className="text-sm font-bold tracking-wider uppercase"
               style={{ color: "white", fontFamily: "Inter, sans-serif" }}
@@ -122,7 +122,7 @@ export default function Guarantee() {
             <span className="section-rule" />
             <p
               className="text-xs font-bold tracking-[0.2em] uppercase mb-3"
-              style={{ color: "#F26419", fontFamily: "Inter, sans-serif" }}
+              style={{ color: "#F0B500", fontFamily: "Inter, sans-serif" }}
             >
               How to file a claim
             </p>
@@ -150,7 +150,7 @@ export default function Guarantee() {
                   className="text-4xl mb-4"
                   style={{
                     fontFamily: "'Archivo Black', sans-serif",
-                    color: "#F26419",
+                    color: "#F0B500",
                     opacity: 0.6,
                   }}
                 >
@@ -178,7 +178,7 @@ export default function Guarantee() {
           <div className="mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               File a Claim <ArrowRight size={16} />
             </Link>
@@ -192,7 +192,7 @@ export default function Guarantee() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="reveal">
               <div className="flex items-center gap-3 mb-6">
-                <CheckCircle size={22} style={{ color: "#F26419" }} />
+                <CheckCircle size={22} style={{ color: "#F0B500" }} />
                 <h2
                   className="text-2xl lg:text-3xl text-white"
                   style={{ fontFamily: "'Archivo Black', sans-serif" }}
@@ -209,7 +209,7 @@ export default function Guarantee() {
                   >
                     <span
                       className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full"
-                      style={{ backgroundColor: "#F26419" }}
+                      style={{ backgroundColor: "#F0B500" }}
                     />
                     <span className="text-sm leading-relaxed">{item}</span>
                   </li>
@@ -253,7 +253,7 @@ export default function Guarantee() {
           <span className="section-rule" />
           <p
             className="text-xs font-bold tracking-[0.2em] uppercase mb-3"
-            style={{ color: "#F26419", fontFamily: "Inter, sans-serif" }}
+            style={{ color: "#F0B500", fontFamily: "Inter, sans-serif" }}
           >
             Written Guarantee Terms
           </p>
@@ -434,7 +434,7 @@ export default function Guarantee() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#F26419] hover:bg-[#d4561a] text-white font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-2 bg-[#F0B500] hover:bg-[#C99700] text-[#0E1929] font-bold px-8 py-4 text-sm tracking-widest uppercase transition-all duration-200 active:scale-[0.97]"
             >
               Contact Support <ArrowRight size={16} />
             </Link>
