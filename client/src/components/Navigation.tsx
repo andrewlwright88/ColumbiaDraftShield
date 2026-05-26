@@ -80,9 +80,9 @@ export default function Navigation() {
               aria-hidden="true"
             />
             <img
-              src={IMG.logoTrimMaster}
+              src={IMG.logoTrimMasterOnBlack}
               alt="TrimMaster by Columbia Aluminum Products"
-              className="hidden sm:block h-7 w-auto"
+              className="hidden sm:block h-9 w-auto"
             />
           </Link>
 

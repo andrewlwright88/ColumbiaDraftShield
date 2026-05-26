@@ -12,6 +12,7 @@ export const IMG = {
   packageUniversal: "/photos/package-universal.png",
   science: "/placeholders/science.svg",
   heritage: "/placeholders/heritage.svg",
-  logoTrimMaster: "/brand/trimmaster-logo.png",
+  logoTrimMaster: "/brand/trimmaster-logo.png",         // transparent backplate — for cream/light surfaces
+  logoTrimMasterOnBlack: "/brand/trimmaster-logo-onblack.png", // keeps the original black backplate as part of the lockup
   logoColumbia: "/brand/columbia-logo.avif",
 };
